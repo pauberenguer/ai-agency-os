@@ -1,0 +1,5 @@
+# Local SEO Audit System — Python Requirements
+# Requires Python 3.10+ (uses PEP 604 union types: str | None)
+#
+# No external dependencies — all scripts use Python standard library only.
+# Chrome/Chromium required for PDF generation (auto-detected by generate_pdf.py).

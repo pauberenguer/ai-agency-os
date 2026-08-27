@@ -1,0 +1,22 @@
+{
+  "project": {
+    "name": "Local SEO Audit System",
+    "version": "1.0.0",
+    "description": "Complete 21-phase local business SEO audit system"
+  },
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep"
+    ]
+  },
+  "model": {
+    "default": "claude-opus-4-6",
+    "subagents": "claude-sonnet-4-6"
+  }
+}

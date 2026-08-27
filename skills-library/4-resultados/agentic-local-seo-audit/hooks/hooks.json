@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "WebFetch",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Before fetching this URL, verify it is the target audit site, a competitor site, or a legitimate SEO tool. Do not fetch unrelated URLs."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "After writing audit output, verify: (1) No generic recommendations — every finding references the specific business. (2) Competitor context is included. (3) Every recommendation has specific steps, effort estimate, and expected impact. (4) Priority scoring (Impact x Feasibility) is present. (5) AI visibility angle is considered for content recommendations."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "If the user's message triggers an SEO audit (contains 'run an audit', 'seo audit', 'audit this site', etc.), ensure the intake form has been completed with items 1-6 before proceeding. If not collected yet, present the intake form first."
+          }
+        ]
+      }
+    ]
+  }
+}

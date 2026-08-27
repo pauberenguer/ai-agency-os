@@ -1,0 +1,37 @@
+<!-- AI Agency OS · Plantilla: AUDITORÍA. Sustituir todos los {{...}} · CSS: incrustar base.css en <style> -->
+<header>
+  <div class="kicker">{{NOMBRE_AGENCIA}} · Auditoría digital</div>
+  <h1>{{NEGOCIO_AUDITADO}}</h1>
+  <div class="meta">{{FECHA}} · Dimensiones: {{DIMENSIONES — p.ej. SEO local · Web · Legal}}</div>
+</header>
+
+<div class="kpis">
+  <div class="kpi"><b>{{NOTA_GLOBAL}}/100</b><span>Nota global</span></div>
+  <div class="kpi"><b>{{N_CRITICOS}}</b><span>Problemas críticos</span></div>
+  <div class="kpi"><b>{{N_QUICKWINS}}</b><span>Mejoras rápidas</span></div>
+</div>
+
+<div class="destacado">{{EL_HALLAZGO — el dato más contundente en lenguaje de dueño: "Tu competencia aparece antes que tú en Google Maps para 'cerrajero valencia' — y recibe tus llamadas"}}</div>
+
+<h2>Lo crítico (arreglar ya)</h2>
+<div class="card critico"><b>1 · {{PROBLEMA_1}}</b><br>{{QUÉ_PASA_Y_QUÉ_CUESTA — evidencia + impacto}}<br><i>Arreglo: {{SOLUCIÓN_1}}</i></div>
+<div class="card critico"><b>2 · {{PROBLEMA_2}}</b><br>{{EVIDENCIA_E_IMPACTO}}<br><i>Arreglo: {{SOLUCIÓN_2}}</i></div>
+
+<h2>Mejoras rápidas (impacto alto, esfuerzo bajo)</h2>
+<ul>
+  <li>{{QUICKWIN_1}}</li>
+  <li>{{QUICKWIN_2}}</li>
+  <li>{{QUICKWIN_3}}</li>
+</ul>
+
+<h2>Resultado por dimensión</h2>
+<table>
+  <tr><th>Dimensión</th><th>Nota</th><th>En una frase</th></tr>
+  <tr><td>{{DIM_1}}</td><td>{{NOTA_1}}</td><td>{{RESUMEN_1}}</td></tr>
+  <tr><td>{{DIM_2}}</td><td>{{NOTA_2}}</td><td>{{RESUMEN_2}}</td></tr>
+</table>
+
+<h2>Y ahora qué</h2>
+<div class="card">{{SIGUIENTE_PASO_COMERCIAL — "Estas 3 cosas las dejamos arregladas en 30 días. Te proponemos verlo el {{DÍA}} en 20 minutos."}}</div>
+
+<footer>{{NOMBRE_AGENCIA}} · {{CONTACTO}} · Auditoría realizada con autorización del negocio.</footer>

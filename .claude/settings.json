@@ -1,0 +1,90 @@
+{
+  "_comment": "AI Agency OS — settings.json del proyecto. Permisos seguros + hooks locales del OS. Los hooks de Sinapsis viven en ~/.claude/settings.json (global), instalados por bash scripts/install.sh.",
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Edit(**)",
+      "Write(**)",
+      "Bash(git status)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git branch*)",
+      "Bash(git checkout*)",
+      "Bash(git pull)",
+      "Bash(git push)",
+      "Bash(npm install)",
+      "Bash(npm run *)",
+      "Bash(node *)",
+      "Bash(python3 *)",
+      "Bash(bash scripts/*)",
+      "Bash(ls *)",
+      "Bash(pwd)",
+      "Bash(cat *)",
+      "Bash(grep *)",
+      "Bash(find *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(sudo *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Read(.env)",
+      "Read(**/.env)",
+      "Read(**/credentials*)",
+      "Read(**/secrets*)"
+    ]
+  },
+  "hooks": {
+    "_comment": "Hooks locales del OS — los hooks Sinapsis (observe, instinct-activator, etc.) están en ~/.claude/settings.json. Estos son específicos del repo.",
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "_comment": "Auto-sync del índice de memoria (/recuerda): ingest incremental best-effort al iniciar sesión. Best-effort: no bloquea el arranque ni rompe si faltan deps (pyyaml) o no hay corpus.",
+            "type": "command",
+            "command": "python3 scripts/memory-index/ingest.py >/dev/null 2>&1 || true",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "_comment": "Detecta si se ha añadido/modificado una skill — flagear para sync en próximo wrap-up",
+            "type": "command",
+            "command": "bash scripts/skill-change-detector.sh",
+            "async": true,
+            "timeout": 3
+          },
+          {
+            "_comment": "Gate de entregables: escanea material de cliente en busca de placeholders/AI-tells y recuerda pasar los gates de calidad",
+            "type": "command",
+            "command": "bash .claude/hooks/entregable-gate.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "_comment": "Guardia de voz: al escribir para un cliente con brand-context, recuerda cargar su voz (1 vez por sesión y cliente)",
+            "type": "command",
+            "command": "bash .claude/hooks/voz-cliente.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

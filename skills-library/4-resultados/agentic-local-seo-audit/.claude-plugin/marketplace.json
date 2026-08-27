@@ -1,0 +1,38 @@
+{
+  "name": "local-seo-audit",
+  "owner": {
+    "name": "mshahiddigital",
+    "url": "https://github.com/mshahiddigital"
+  },
+  "metadata": {
+    "description": "Complete 21-phase local business SEO audit system with project-based directory structure, 8 Python automation scripts, LOCAL-IMPACT (60-item) and SERP-TRUST (50-item) proprietary scoring frameworks, AI content detection & humanization, and AI visibility auditing.",
+    "repository": "https://github.com/mshahiddigital/local-seo-audit"
+  },
+  "plugins": [
+    {
+      "name": "local-seo-audit",
+      "source": "./",
+      "description": "Complete 21-phase local business SEO audit system for Claude Code. Project-based audit directory (projects/[business-slug]/). 8 Python automation scripts: site crawler, PDF generator, URL validator, score calculator, quality checker, status tracker, report compiler, project setup. LOCAL-IMPACT (60-item) + SERP-TRUST (50-item) proprietary scoring with SEO Health Index. 28 auto-activating skills, 43 slash commands, 6 sub-agents. Covers technical SEO, on-page, content strategy, keyword gaps, competitor analysis, GBP, AI visibility (AI Overviews, ChatGPT, Perplexity, Gemini, Copilot), entity optimization, backlinks, voice search, accessibility. AI content detection & humanization audit (Phase 4a) — 24 AI writing pattern taxonomy based on Wikipedia WikiProject AI Cleanup. PDF reports with SVG gauge charts. 30/90/180/365-day action plans.",
+      "category": "marketing",
+      "tags": [
+        "seo",
+        "local-seo",
+        "audit",
+        "google-business-profile",
+        "ai-seo",
+        "aeo",
+        "geo",
+        "llm-seo",
+        "technical-seo",
+        "content-strategy",
+        "competitor-analysis",
+        "local-impact",
+        "serp-trust",
+        "pdf-report",
+        "schema-markup",
+        "ai-content-detection",
+        "humanization"
+      ]
+    }
+  ]
+}

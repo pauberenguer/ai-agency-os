@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>AI Agency OS — Guía completa</title>
+<style>
+@page { size: A4; margin: 22mm 18mm; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#0a0a0a;line-height:1.65;font-size:11.5pt}
+.portada{height:250mm;display:flex;flex-direction:column;justify-content:center;page-break-after:always}
+.portada .k{font-size:11pt;letter-spacing:.25em;text-transform:uppercase;color:#6b6b6b}
+.portada h1{font-size:42pt;line-height:1.05;margin:16px 0}
+.portada p{font-size:14pt;color:#6b6b6b;max-width:420px}
+.portada .pie{margin-top:auto;color:#6b6b6b;font-size:10pt;border-top:1px solid rgba(10,10,10,.15);padding-top:12px}
+section{page-break-before:always}
+section:first-of-type{page-break-before:avoid}
+h2{font-size:20pt;border-bottom:3px solid #0a0a0a;padding-bottom:8px;margin-bottom:18px}
+h2 .num{color:#6b6b6b;font-weight:400}
+h3{font-size:13pt;margin:20px 0 8px}
+p{margin:9px 0}
+ul,ol{margin:9px 0 9px 22px}
+li{margin:5px 0}
+.caja{background:#f4f4f4;border-radius:8px;padding:14px 18px;margin:14px 0}
+.caja b:first-child{display:block;margin-bottom:4px}
+.negra{background:#0a0a0a;color:#fff;border-radius:8px;padding:16px 20px;margin:14px 0;font-size:12pt}
+.negra b{color:#fff}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:10pt}
+th{text-align:left;font-size:8.5pt;letter-spacing:.06em;text-transform:uppercase;color:#6b6b6b;border-bottom:2px solid #0a0a0a;padding:6px 8px}
+td{padding:7px 8px;border-bottom:1px solid rgba(10,10,10,.12);vertical-align:top}
+code{background:#f4f4f4;padding:1px 6px;border-radius:4px;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:9.5pt}
+.paso{display:flex;gap:14px;margin:14px 0;page-break-inside:avoid}
+.paso .n{flex:0 0 30px;height:30px;background:#0a0a0a;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13pt}
+.dialogo{border-left:3px solid #0a0a0a;padding:8px 16px;margin:10px 0;font-style:italic;color:#333}
+.aviso{border:1px solid rgba(10,10,10,.25);border-radius:8px;padding:12px 16px;margin:12px 0;font-size:10.5pt}
+.aviso::before{content:"⚠ ";font-weight:700}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.pilar{border:1px solid rgba(10,10,10,.15);border-radius:8px;padding:12px 14px;page-break-inside:avoid}
+.pilar b{display:block;font-size:11pt}
+.pilar span{font-size:9.5pt;color:#6b6b6b}
+.chuleta td:first-child{white-space:nowrap;font-family:"SF Mono",Menlo,monospace;font-size:9pt}
+.glos td:first-child{font-weight:700;white-space:nowrap}
+</style>
+</head>
+<body>
+
+<div class="portada">
+  <div class="k">Guía completa · de cero a operativo</div>
+  <h1>AI Agency OS</h1>
+  <p>El sistema operativo de tu agencia de IA. Todo lo que contiene y cómo usarlo, explicado paso a paso — aunque nunca hayas tocado nada parecido.</p>
+  <div class="pie">AI Agency Accelerator · aiagencyaccelerator.com · Versión 1.0</div>
+</div>
+
+<section>
+<h2><span class="num">01 ·</span> ¿Qué es esto? (empecemos de cero)</h2>
+<p>Imagina que contratas a un empleado brillante para tu agencia: aprende rápido, escribe bien, analiza datos, prepara propuestas y nunca se cansa. Solo tiene un defecto: <b>cada mañana llega con amnesia total</b>. No recuerda tus clientes, ni tu forma de trabajar, ni lo que hicisteis ayer.</p>
+<p>Eso es la inteligencia artificial "normal" (como ChatGPT): brillante, pero sin memoria de tu negocio y sin un método de trabajo.</p>
+<div class="negra"><b>AI Agency OS es la solución:</b> un sistema que se instala sobre Claude (la IA de la empresa Anthropic) y lo convierte en ese empleado, pero CON memoria, CON tu forma de trabajar, CON herramientas de agencia listas, y que cada día te conoce mejor.</div>
+<h3>Las tres piezas, en lenguaje llano</h3>
+<ul>
+<li><b>Claude</b> — la inteligencia artificial. El "cerebro". Lo hace la empresa Anthropic.</li>
+<li><b>Claude Code</b> — el programa donde trabajas con Claude. Aunque su nombre diga "Code" (código), no hace falta programar: tú escribes en español normal y él trabaja.</li>
+<li><b>AI Agency OS</b> — nuestro sistema: una carpeta con más de 1.000 archivos que le da a Claude memoria, método y 100 habilidades de agencia. "OS" viene de <i>Operating System</i> (sistema operativo), porque hace de base de todo tu trabajo.</li>
+</ul>
+<div class="caja"><b>¿Para quién es?</b> Para quien monta o lleva una agencia de servicios con IA para negocios (restaurantes, clínicas, tiendas, profesionales…). No hace falta saber programar. Solo saber leer, escribir y tener 20 minutos para instalarlo.</div>
+</section>
+
+<section>
+<h2><span class="num">02 ·</span> Qué necesitas antes de empezar</h2>
+<table>
+<tr><th>Qué</th><th>Para qué</th><th>Coste</th></tr>
+<tr><td><b>Un ordenador</b> (Mac o Windows)</td><td>Ahí vive tu OS</td><td>—</td></tr>
+<tr><td><b>Claude Code</b> (aplicación)</td><td>El programa donde trabajarás. Se descarga de claude.com/download</td><td>Gratis</td></tr>
+<tr><td><b>Suscripción Claude Pro</b></td><td>Para que Claude use sus modelos buenos. Sin esto, el sistema "se siente roto"</td><td>~20 $/mes</td></tr>
+<tr><td><b>El repositorio AI Agency OS</b></td><td>La carpeta del sistema (te damos el enlace en el programa)</td><td>Incluido</td></tr>
+<tr><td>20 minutos tranquilos</td><td>La instalación te entrevista — mejor sin prisas</td><td>—</td></tr>
+</table>
+<div class="aviso">La suscripción de Claude se paga a Anthropic y es aparte de la formación. Lo decimos claro porque otros lo esconden: el coste mínimo realista para operar bien es unos 20 $/mes.</div>
+</section>
+
+<section>
+<h2><span class="num">03 ·</span> Instalación, paso a paso</h2>
+<div class="paso"><div class="n">1</div><div><b>Descarga la carpeta del OS.</b> Sigue el enlace del programa. Guárdala donde quieras (por ejemplo, en tu carpeta personal).</div></div>
+<div class="paso"><div class="n">2</div><div><b>Abre Claude Code en esa carpeta</b> y escribe, literalmente: <div class="dialogo">instala esto</div> Claude leerá las instrucciones que vienen dentro y lo instalará todo él solo, verificando cada paso. Verás mensajes de "OK" en verde.</div></div>
+<div class="paso"><div class="n">3</div><div><b>La entrevista (10 minutos).</b> Al terminar la parte técnica, el sistema te hará preguntas — quién eres, qué negocio tienes, tus objetivos. No es un formulario: es una conversación. Responde con naturalidad; con eso el OS deja de ser genérico y pasa a ser TU agencia.</div></div>
+<div class="paso"><div class="n">4</div><div><b>Tu primer resultado.</b> Nada más acabar, el sistema genera tu primer entregable real en unos 5 minutos, para que veas de qué es capaz desde el día uno.</div></div>
+<div class="caja"><b>¿Algo falla a mitad?</b> Tranquilidad: el instalador recuerda por dónde iba. Escribe <code>bash scripts/install.sh --resume</code> (o dile a Claude "continúa la instalación") y retoma exactamente donde se quedó. Y el comando <code>/doctor</code> revisa la salud de todo el sistema en cualquier momento.</div>
+</section>
+
+<section>
+<h2><span class="num">04 ·</span> Un día normal con tu OS</h2>
+<h3>Por la mañana</h3>
+<p>Abres Claude Code en la carpeta del OS y escribes <code>/start-here</code>. El sistema carga tu contexto: qué tienes entre manos, qué quedó pendiente ayer, tus prioridades. Es tu "buenos días" de 10 segundos.</p>
+<h3>Durante el día: simplemente conversa</h3>
+<p>No hay menús ni botones. Le pides las cosas en español normal:</p>
+<div class="dialogo">"Prepárame la llamada de mañana con la clínica dental"<br>"Hazme el calendario de contenidos de septiembre para el restaurante"<br>"¿Por qué ha bajado el tráfico de la web del gimnasio?"</div>
+<p>El OS reconoce qué le pides y activa la habilidad adecuada de sus 100 (en la sección 6 te contamos qué son). Si la habilidad no está instalada aún, te ofrece instalarla — dices "sí" y listo.</p>
+<h3>Al terminar</h3>
+<p>Escribes <code>/wrap-up</code>. El sistema guarda lo aprendido, resume el día y deja preparada la sesión de mañana. <b>Este cierre es lo que hace que mañana no empiece de cero.</b></p>
+<div class="negra"><b>Y por la noche, sin que hagas nada:</b> el OS repasa cómo has trabajado y aprende tus patrones. Con las semanas desarrolla "instintos": reglas tuyas que aplica solo. Tu OS y el de otro alumno acaban siendo distintos, porque cada uno aprende de su dueño.</div>
+</section>
+
+<section>
+<h2><span class="num">05 ·</span> El mapa del sistema (qué hay dentro)</h2>
+<p>Todo lo que contiene el OS, de un vistazo. Las secciones siguientes explican cada pieza:</p>
+<table>
+<tr><th>Pieza</th><th>Cuántas</th><th>En una frase</th></tr>
+<tr><td><b>Skills</b> (habilidades)</td><td>100</td><td>Lo que el OS sabe HACER, organizado en 5 pilares</td></tr>
+<tr><td><b>Playbooks</b> (jugadas)</td><td>5</td><td>Servicios completos en una orden: auditoría, propuesta, prospección, informe, contenido</td></tr>
+<tr><td><b>Subagentes</b> (tu equipo)</td><td>10</td><td>Especialistas que trabajan para ti: revisor, analista, entrenador de ventas…</td></tr>
+<tr><td><b>Modos</b> (estilos)</td><td>5</td><td>Cómo te habla el OS: profesor, ejecutor, consultor, director, campo</td></tr>
+<tr><td><b>Plantillas</b></td><td>5</td><td>Tus documentos de cliente, siempre con la misma imagen profesional</td></tr>
+<tr><td><b>Memoria</b></td><td>3 sistemas</td><td>Lo que le cuentas, lo que aprende de ti, y el hilo de cada día</td></tr>
+<tr><td><b>Guardias de calidad</b></td><td>2</td><td>Vigilantes automáticos que evitan que salga un trabajo mediocre</td></tr>
+<tr><td><b>Comandos</b></td><td>23</td><td>Atajos que empiezan por "/" para las tareas de sistema</td></tr>
+<tr><td><b>Conexiones de datos</b></td><td>~15</td><td>Enchufes opcionales a Google, Meta, etc. para trabajar con datos reales</td></tr>
+<tr><td><b>Conocimiento por sector</b></td><td>8 packs</td><td>Lo que hay que saber de cada tipo de cliente: cifras, objeciones, temporadas</td></tr>
+</table>
+</section>
+
+<section>
+<h2><span class="num">06 ·</span> Las 100 skills — lo que tu OS sabe hacer</h2>
+<p><b>¿Qué es una skill?</b> Un "manual de experto" que Claude lee justo cuando lo necesita. La skill de propuestas contiene cómo se escribe una propuesta ganadora; la de SEO local, cómo se posiciona un negocio en Google Maps. Tú no las lees: trabajas, y el OS aplica la que toca.</p>
+<p>Son exactamente 100, organizadas en <b>5 pilares de 20</b> que siguen el viaje de tu agencia:</p>
+<div class="grid2">
+<div class="pilar"><b>Pilar 1 · SISTEMA</b><span>"Tu OS y tu cabeza"</span><br>Los rituales diarios, la memoria, la entrevista inicial, herramientas para pensar mejor (28 modelos mentales, el "pre-mortem": imaginar que algo salió mal ANTES de hacerlo), y tu identidad: nombre, posicionamiento y voz de tu marca.</div>
+<div class="pilar"><b>Pilar 2 · CLIENTES</b><span>"Sin clientes no hay agencia"</span><br>El camino completo para conseguirlos: definir tu oferta y tu precio, encontrar negocios de tu zona en Google Maps, escribirles sin parecer spam, preparar la llamada, responder al "es caro", negociar, hacer la propuesta con retorno claro y conseguir referidos.</div>
+<div class="pilar"><b>Pilar 3 · ENTREGA</b><span>"Los servicios que facturas"</span><br>El trabajo que venderás: posicionar negocios en Google y Google Maps, llevar sus campañas de publicidad en Meta y Google, crear imágenes para anuncios (céntimos por imagen), redes sociales completas y email marketing que llega a la bandeja de entrada.</div>
+<div class="pilar"><b>Pilar 4 · RESULTADOS</b><span>"Demuestra lo que vales"</span><br>Lo que renueva contratos: auditorías profesionales (de web, SEO, publicidad, legal), leer los datos reales de Google Analytics, encontrar dinero desperdiciado en anuncios, informes que un dueño de bar entiende, y la reputación (reseñas) del cliente.</div>
+<div class="pilar"><b>Pilar 5 · OPERACIONES</b><span>"La agencia que no se rompe"</span><br>Que el negocio funcione sin quemarte: recibir bien a cada cliente nuevo, frenar el "¿me haces también esto otro?" (control de alcance), tus números (margen, facturas), fiscalidad de autónomos en España, automatizaciones y agentes de WhatsApp.</div>
+<div class="pilar"><b>¿Y cómo se instalan?</b><span>Modelo "armario abierto"</span><br>17 skills esenciales vienen activas. Las otras 83 esperan en la biblioteca sin ocupar espacio: cuando pides algo que hace una, el OS te ofrece instalarla al momento. Solo llevas encima lo que usas.</div>
+</div>
+</section>
+
+<section>
+<h2><span class="num">07 ·</span> Los 5 playbooks — servicios completos en una orden</h2>
+<p>Las skills son herramientas sueltas. Los playbooks son <b>recetas completas</b> que las combinan. Escribes una orden y el OS ejecuta el servicio entero, con controles de calidad incluidos. Este es el ciclo completo de un cliente:</p>
+<div class="paso"><div class="n">1</div><div><code>/prospecta Valencia clínicas</code><br><b>Buscar clientes.</b> Encuentra negocios reales de esa zona y sector, detecta cuáles tienen problemas visibles (web pobre, reseñas sin responder), prioriza los mejores y te prepara el primer mensaje personalizado para cada uno.</div></div>
+<div class="paso"><div class="n">2</div><div><code>/auditoria clinicasonrisa.es</code><br><b>La puerta de entrada.</b> Cuatro especialistas revisan a la vez la web del negocio (posicionamiento, experiencia de uso, legal, publicidad) y lo convierten en un informe profesional que puedes regalar o cobrar. Es tu mejor arma para abrir puertas.</div></div>
+<div class="paso"><div class="n">3</div><div><code>/propuesta "Clínica Sonrisa"</code><br><b>Cerrar el trato.</b> Investiga el negocio, comprueba que de verdad puede ser buen cliente (si no, te dice "no le envíes propuesta" — también protege tu tiempo), y redacta la propuesta con el retorno en SU idioma: "unas 15 reservas más al mes".</div></div>
+<div class="paso"><div class="n">4</div><div><code>/contenido clinica-sonrisa</code><br><b>Entregar el servicio.</b> Primero el calendario del mes (lo apruebas tú), después todas las piezas escritas con la voz del cliente, listas para programar.</div></div>
+<div class="paso"><div class="n">5</div><div><code>/informe clinica-sonrisa</code><br><b>Renovar el contrato.</b> Coge los datos reales del mes, busca el titular ("hemos encontrado y cortado 340 € de gasto desperdiciado") y monta el informe de una página que hace que el cliente siga otro mes.</div></div>
+</section>
+
+<section>
+<h2><span class="num">08 ·</span> Los 10 subagentes — tu equipo</h2>
+<p>Un subagente es un ayudante especializado dentro del OS. Tú (o un playbook) los invocas y trabajan aparte, sin ensuciar tu conversación. Es la diferencia entre "la IA me ayuda" y "tengo un equipo".</p>
+<table>
+<tr><th>Agente</th><th>Qué hace por ti</th></tr>
+<tr><td><b>revisor</b></td><td>Lee tu entregable como el cliente más exigente y dicta: ENVIABLE o NO ENVIABLE, con la lista de arreglos</td></tr>
+<tr><td><b>auditor</b></td><td>Revisa una dimensión (SEO, web, legal…) — se lanzan varios a la vez en las auditorías</td></tr>
+<tr><td><b>investigador</b></td><td>Dossier completo de un negocio antes de contactar: sus dolores, su competencia y "el gancho" para abrir conversación</td></tr>
+<tr><td><b>redactor</b></td><td>Produce contenido en volumen con la voz del cliente ya cargada</td></tr>
+<tr><td><b>disenador</b></td><td>Convierte el trabajo aprobado en el documento final con la imagen de tu agencia</td></tr>
+<tr><td><b>vendedor</b> ★</td><td>Tu sparring: interpreta al dueño del negocio (con sus objeciones reales) para que ensayes la llamada ANTES de la llamada. Al acabar te puntúa y te dice "la frase que te faltó"</td></tr>
+<tr><td><b>analista</b></td><td>Le das datos en bruto y te devuelve los 3 números que importan, con su porqué</td></tr>
+<tr><td><b>estratega</b></td><td>Segunda opinión antes de decisiones caras: te enseña el riesgo que no estás viendo</td></tr>
+<tr><td><b>traductor</b></td><td>Traduce y adapta material inglés↔español sin romper nada</td></tr>
+<tr><td><b>mentor</b> ★</td><td>Para el "¿y ahora qué hago?": mira en qué fase estás y te da EL siguiente paso — incluida la verdad incómoda ("llevas 3 semanas puliendo la web y cero conversaciones de venta")</td></tr>
+</table>
+</section>
+
+<section>
+<h2><span class="num">09 ·</span> Los 5 modos — cómo te habla el OS</h2>
+<p>El mismo sistema, cinco formas de comunicarse según el momento. Se cambia con el comando <code>/output-style</code>:</p>
+<table>
+<tr><th>Modo</th><th>Cuándo usarlo</th><th>Cómo se comporta</th></tr>
+<tr><td><b>Profesor</b></td><td>Tu primer mes</td><td>Trabaja explicándote el porqué de cada paso y qué acabas de aprender</td></tr>
+<tr><td><b>Ejecutor</b></td><td>Producción diaria</td><td>Cero charla. Hace y entrega</td></tr>
+<tr><td><b>Consultor</b></td><td>Con un cliente delante</td><td>Habla como estratega senior, en lenguaje de negocio — jamás menciona las "tripas" del sistema</td></tr>
+<tr><td><b>Director</b></td><td>Revisión semanal, decisiones</td><td>Todo pasa por el filtro margen · tiempo · prioridad, con recomendaciones claras</td></tr>
+<tr><td><b>Campo</b></td><td>Desde el móvil, entre reuniones</td><td>Máximo 5 líneas, respuestas listas para copiar y pegar</td></tr>
+</table>
+</section>
+
+<section>
+<h2><span class="num">10 ·</span> La memoria — por qué cada día te conoce mejor</h2>
+<p>Es la pieza que lo cambia todo. Tres sistemas trabajando a la vez:</p>
+<div class="caja"><b>1 · Lo que TÚ le cuentas (memoria explícita)</b>Dices <code>/recuerda que este cliente no quiere emojis</code> y queda guardado para siempre. Las decisiones importantes van a un diario de decisiones que el OS consulta antes de contradecirte.</div>
+<div class="caja"><b>2 · Lo que aprende de VERTE trabajar (memoria implícita)</b>El sistema observa cómo trabajas y, durante la noche, consolida patrones en "instintos": reglas tuyas que empieza a aplicar solo. Tú los entrenas diciéndole cuáles valen y cuáles no.</div>
+<div class="caja"><b>3 · El hilo de cada día (memoria de sesión)</b>Los cierres con <code>/wrap-up</code> y los resúmenes diarios hacen que mañana continúe donde hoy lo dejaste — por cliente y por proyecto.</div>
+<div class="negra">La consecuencia práctica: <b>a los 3 meses, tu OS no se parece al de nadie.</b> Sabe tu manera de escribir, tus clientes, tus reglas y tus manías. Ese es el activo que estás construyendo cada día que lo usas.</div>
+</section>
+
+<section>
+<h2><span class="num">11 ·</span> Trabajar con clientes</h2>
+<h3>Dar de alta un cliente (2 minutos)</h3>
+<p>Escribes <code>/add-client clinica-sonrisa</code> y eliges su sector. El OS crea automáticamente:</p>
+<ul>
+<li><b>Su carpeta completa</b>, con espacio para su marca (voz, cliente ideal, posicionamiento) y sus entregables</li>
+<li><b>Su "cerebro" propio</b>: un archivo de reglas que hace que, al entrar en su carpeta, Claude se convierta en la agencia de ESE cliente — su tono, sus temas vetados, su historia</li>
+<li><b>El conocimiento de su sector</b>: cifras normales del gremio, objeciones típicas, temporadas altas y bajas — para que hables de su negocio como alguien de dentro</li>
+</ul>
+<h3>Los guardias de calidad (trabajan solos)</h3>
+<p>Dos vigilantes automáticos protegen tu reputación sin que hagas nada:</p>
+<ul>
+<li><b>El guardia de entregables</b> revisa todo documento de cliente: si quedan huecos sin rellenar, frases con "olor a IA" o texto de relleno, te avisa y exige pasar el control antes de darlo por terminado.</li>
+<li><b>El guardia de voz</b>: en cuanto escribes algo para un cliente, te recuerda cargar su voz para no escribir "en genérico".</li>
+</ul>
+<h3>Las 5 plantillas — tu imagen de marca</h3>
+<p>Informe mensual, auditoría, propuesta, plan de 90 días y caso de éxito: cinco documentos profesionales, sobrios (blanco y negro, una página), que se abren perfectos en el móvil del cliente. Personalizas los colores UNA vez y toda tu producción sale con tu marca.</p>
+</section>
+
+<section>
+<h2><span class="num">12 ·</span> Conectar datos reales (opcional, cuando estés listo)</h2>
+<p>Para los informes de verdad, el OS puede "enchufarse" a las fuentes de datos mediante conectores llamados <b>MCPs</b> (piensa en ellos como enchufes estándar). El sistema trae una guía con los ~15 revisados, y Claude te acompaña en cada conexión. Los principales:</p>
+<table>
+<tr><th>Conexión</th><th>Qué te da</th><th>Coste</th></tr>
+<tr><td>Google Analytics + Search Console</td><td>Visitas y búsquedas reales de la web del cliente</td><td>Gratis</td></tr>
+<tr><td>Meta y Google Ads</td><td>Datos reales de las campañas de publicidad</td><td>Gratis (con las cuentas del cliente)</td></tr>
+<tr><td>Microsoft Clarity</td><td>Mapas de calor: ver cómo usa la gente la web</td><td>Gratis</td></tr>
+<tr><td>ElevenLabs</td><td>Locuciones con voz natural en español</td><td>Desde gratis</td></tr>
+<tr><td>Reseñas multi-portal</td><td>Google, Trustpilot, TripAdvisor para reputación</td><td>Céntimos por consulta</td></tr>
+</table>
+<p>La regla del OS aquí es <b>"conectar, no instalar"</b>: casi todo son conexiones oficiales que se activan con tu cuenta, sin instalar programas raros.</p>
+</section>
+
+<section>
+<h2><span class="num">13 ·</span> Chuleta de comandos</h2>
+<table class="chuleta">
+<tr><th>Comando</th><th>Qué hace</th></tr>
+<tr><td>/start-here</td><td>Abrir el día: carga contexto y prioridades</td></tr>
+<tr><td>/wrap-up</td><td>Cerrar el día: guarda memoria y prepara mañana</td></tr>
+<tr><td>/recuerda …</td><td>Guardar un dato o preferencia para siempre</td></tr>
+<tr><td>/doctor</td><td>Revisión de salud completa del sistema</td></tr>
+<tr><td>/skills</td><td>Ver e instalar habilidades de la biblioteca</td></tr>
+<tr><td>/add-client &lt;nombre&gt;</td><td>Alta completa de un cliente nuevo</td></tr>
+<tr><td>/prospecta &lt;zona&gt; &lt;sector&gt;</td><td>Buscar y priorizar clientes potenciales</td></tr>
+<tr><td>/auditoria &lt;web&gt;</td><td>Auditoría completa con informe vendible</td></tr>
+<tr><td>/propuesta &lt;negocio&gt;</td><td>Propuesta comercial con retorno claro</td></tr>
+<tr><td>/contenido &lt;cliente&gt;</td><td>El mes de redes: calendario + piezas</td></tr>
+<tr><td>/informe &lt;cliente&gt;</td><td>Informe mensual con datos reales</td></tr>
+<tr><td>/actualiza</td><td>Traer mejoras del OS sin tocar tu memoria</td></tr>
+<tr><td>/backup · /restaura</td><td>Copia de seguridad de tu memoria y contexto</td></tr>
+<tr><td>/aprende</td><td>Programa guiado de aprendizaje del OS</td></tr>
+</table>
+</section>
+
+<section>
+<h2><span class="num">14 ·</span> Preguntas frecuentes</h2>
+<h3>¿Necesito saber programar?</h3>
+<p>No. Todo se hace conversando en español. Cuando hay que ejecutar algo técnico, Claude lo hace por ti y te va contando.</p>
+<h3>¿Qué pasa si rompo algo?</h3>
+<p>Casi nada es irrompible: <code>/doctor</code> diagnostica y arregla, la instalación se puede retomar (<code>--resume</code>) o rehacer desde cero, y <code>/backup</code> guarda tu memoria. El sistema está diseñado para gente que está aprendiendo.</p>
+<h3>¿Mis datos y los de mis clientes están seguros?</h3>
+<p>Tu memoria y los datos de tus clientes viven en TU ordenador, en tu carpeta. Las claves de servicios se guardan en un archivo local que el propio sistema tiene prohibido leer en abierto. Haz copias con <code>/backup</code>.</p>
+<h3>¿Se actualiza?</h3>
+<p>Sí: <code>/actualiza</code> trae las mejoras del OS respetando tu memoria y tus personalizaciones. Si personalizaste una skill, tu versión sobrevive a las actualizaciones.</p>
+<h3>¿Puedo usarlo con varios clientes a la vez?</h3>
+<p>Está diseñado exactamente para eso: cada cliente tiene su carpeta, su memoria, su voz y sus entregables, separados de los demás.</p>
+<h3>¿Cuánto cuesta mantenerlo?</h3>
+<p>El OS en sí, nada (está incluido y es software libre). Claude Pro ~20 $/mes. Las conexiones de datos principales son gratuitas; algunas avanzadas cuestan céntimos por uso y siempre lo sabrás antes.</p>
+</section>
+
+<section>
+<h2><span class="num">15 ·</span> Glosario — las 12 palabras que te cruzarás</h2>
+<table class="glos">
+<tr><td>Claude</td><td>La inteligencia artificial de Anthropic. El cerebro del sistema</td></tr>
+<tr><td>Claude Code</td><td>El programa donde trabajas con Claude escribiendo en español</td></tr>
+<tr><td>OS</td><td>Sistema operativo: la base sobre la que funciona todo tu trabajo</td></tr>
+<tr><td>Skill</td><td>Habilidad: un manual de experto que Claude aplica cuando lo necesitas</td></tr>
+<tr><td>Playbook</td><td>Receta que combina varias skills en un servicio completo</td></tr>
+<tr><td>Subagente</td><td>Ayudante especializado que trabaja aparte (revisor, analista…)</td></tr>
+<tr><td>Comando</td><td>Atajo que empieza por "/" (ej. /doctor)</td></tr>
+<tr><td>Hook</td><td>Vigilante automático que actúa solo en momentos clave (los guardias de calidad)</td></tr>
+<tr><td>MCP</td><td>"Enchufe" estándar para conectar Claude a datos (Google, Meta…)</td></tr>
+<tr><td>Entregable</td><td>Documento final que recibe tu cliente (informe, propuesta…)</td></tr>
+<tr><td>Brand-context</td><td>La identidad guardada de una marca: su voz, su cliente ideal, su posicionamiento</td></tr>
+<tr><td>Instinto</td><td>Regla que el OS aprende solo de verte trabajar</td></tr>
+</table>
+<div class="negra" style="margin-top:24px"><b>El resumen de todo:</b> instala en 20 minutos · conversa en español · el sistema hace, revisa y recuerda · y cada semana que pasa, tu OS vale más — porque aprende de ti.</div>
+</section>
+
+</body>
+</html>
